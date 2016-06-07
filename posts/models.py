@@ -14,6 +14,8 @@ from django.db import models
 class Post(models.Model):
 	title = models.CharField(max_length=120)
 	content=models.TextField()
+	content2=models.TextField()
+
 	#content = models.ManyToManyField(Comments,null=True,blank=True)
 	
 	updated = models.DateTimeField(auto_now=True,auto_now_add=False)
